@@ -4,12 +4,13 @@ WORKDIR /app
 
 ENV NODE_ENV production
 
-COPY package*.json tsconfig*.json ./
+# COPY package*.json tsconfig*.json ./
+COPY package*.json ./
 
 COPY src src
 COPY public public
 COPY node_modules node_modules
-COPY schema schema
+# COPY schema schema 
 # COPY .eslint* ./
 
 # RUN GENERATE_SOURCEMAP=false npm run openapi \
