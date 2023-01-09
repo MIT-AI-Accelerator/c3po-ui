@@ -21,7 +21,7 @@ RUN npm run build
 USER nginx
 
 # Stage 2
-FROM registry1.dso.mil/ironbank/opensource/nginx/nginx:1.23.1
+FROM registry1.dso.mil/ironbank/opensource/nginx/nginx:1.23.2
 
 USER nginx
 
