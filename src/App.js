@@ -9,7 +9,7 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-import { submitPrompt } from './api/GPT_J';
+import { submitPrompt } from './api/sentiments';
 
 function App() {
   const [answer, setAnswer] = useState(null);
