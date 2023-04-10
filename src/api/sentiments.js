@@ -20,28 +20,3 @@ export async function submitPrompt(
         data: respJson,
     };
 }
-
-
-
-// async function submitPrompt(
-//     text="Placeholder text here."
-// ) {
-//     const apiResp = await fetch(`${this.REACT_APP_COMMON_API_BASE}/scratch`, {
-//         method: 'POST',
-//         headers: {
-//             'content-type': 'application/json',
-//         },
-//         credentials: 'include',
-//         body: JSON.stringify({
-//             appId: this.REACT_APP_APPID,
-//             key,
-//             value,
-//         }),
-//     });
-//     const respJson = await apiResp.json();
-//     return {
-//         status: apiResp.status,
-//         data: respJson,
-//     };
-// }
-
