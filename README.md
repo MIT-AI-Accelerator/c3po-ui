@@ -42,6 +42,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 # Knowledge and helpful links
 ## Tools for this repo
 - [How to use pre-commit framework for git hooks](https://pre-commit.com/index.html)
+- [migrating JS to TS](https://www.sitepoint.com/how-to-migrate-a-react-app-to-typescript/)
 
 ## Testing
 

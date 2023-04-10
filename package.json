@@ -12,11 +12,16 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.0.34",
+    "@types/react-dom": "^18.0.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "react-tsparticles": "^2.3.3",
     "tsparticles": "^2.3.4",
+    "typescript": "^5.0.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -24,6 +29,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --modulePaths=src",
     "test:unit": "react-scripts test --watchAll=false --silent --coverage --bail --runInBand --detectOpenHandles",
+    "lint": "eslint . --ext js,jsx,ts,tsx --quiet",
     "coverage": "CI=true react-scripts test --coverage --maxWorkers=2",
     "eject": "react-scripts eject"
   },

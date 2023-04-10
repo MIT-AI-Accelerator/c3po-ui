@@ -4,7 +4,6 @@ import App from './App';
 describe('App', () => {
   it('renders App component', () => {
     render(<App />);
-    screen.debug();
   });
 
   it('Contains an input with a C3PO Prompt label', () => {
