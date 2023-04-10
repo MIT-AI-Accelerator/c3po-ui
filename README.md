@@ -66,6 +66,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 ### SonarQube
 - [SonarQube for dependency check](https://sonarqube.il4.dso.mil/dashboard?id=platform-one-products-ai-accel-transformers-c3po-ui-dependencies)
 - [SonarQube for SCA & code coverage](https://sonarqube.il4.dso.mil/project/issues?id=platform-one-products-ai-accel-transformers-c3po-ui&resolved=false)
+- [False Positive Clearing SQ and trufflehog](https://confluence.il2.dso.mil/display/PUCKBOARD/Sonarqube+False-Positive+Issue+Workflow)
 - [Argo page](https://argocd-il4.admin.dso.mil/applications/argocd/p1-il4-mission-staging-transformers-transformers?view=tree&resource=)
 
 ### K8s configs
