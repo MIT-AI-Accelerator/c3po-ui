@@ -34,7 +34,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --modulePaths=src",
-    "test:unit": "react-scripts test --watchAll=false --silent --coverage --bail --runInBand --detectOpenHandles",
+    "test:unit": "react-scripts test --watchAll=false --silent --coverage --bail --runInBand --detectOpenHandles --modulePaths=src",
     "lint": "eslint . --ext js,jsx,ts,tsx --quiet",
     "coverage": "CI=true react-scripts test --coverage --maxWorkers=2",
     "eject": "react-scripts eject"
