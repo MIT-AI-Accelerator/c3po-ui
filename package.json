@@ -22,7 +22,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --modulePaths=src",
+    "test:unit": "react-scripts test --watchAll=false --silent --coverage --bail --runInBand --detectOpenHandles",
+    "coverage": "CI=true react-scripts test --coverage --maxWorkers=2",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
