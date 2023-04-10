@@ -45,7 +45,12 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - [migrating JS to TS](https://www.sitepoint.com/how-to-migrate-a-react-app-to-typescript/)
 
 ## Testing
-
+- [Good basic tutorial for react testing library](https://medium.com/@rickhanlonii/understanding-jest-mocks-f0046c68e53c)
+- [Basic Jest docs for React testing library](https://jestjs.io/docs/tutorial-react)
+- [Basic React testing library tutorial](https://www.taniarascia.com/how-to-test-useeffect-api-call/)
+- [Object returned by render](https://testing-library.com/docs/react-testing-library/api/#render-result)
+- [fireEvent docs and options](https://testing-library.com/docs/dom-testing-library/api-events/)
+- [what to do if "wrap in act" error asserts](https://davidwcai.medium.com/react-testing-library-and-the-not-wrapped-in-act-errors-491a5629193b)
 
 ## Tools for git
 - [Storing Credentials](https://git-scm.com/docs/git-credential-store)...or just type `git config --global credential.helper store`

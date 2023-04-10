@@ -16,6 +16,7 @@ function App() {
     async function getAnswer(prompt) {
       const newAnswerObj = await submitPrompt(prompt);
       newAnswerObj.status === 200 && setAnswer(newAnswerObj.data.answer);
+      newAnswerObj.status !== 200 && setAnswer('Error, try again later.');
     }
 
     if (prompt) {
