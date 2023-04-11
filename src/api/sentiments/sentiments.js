@@ -14,6 +14,7 @@ export async function submitPrompt(
             text
         }),
     });
+    
     const respJson = await apiResp.json();
     return {
         status: apiResp.status,

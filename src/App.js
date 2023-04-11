@@ -5,7 +5,7 @@ import InputLabel from '@mui/material/InputLabel';
 import InputAdornment from '@mui/material/InputAdornment';
 import FormControl from '@mui/material/FormControl';
 
-import { submitPrompt } from './api/sentiments';
+import { submitPrompt } from './api/sentiments/sentiments';
 
 function App() {
   const [answer, setAnswer] = useState(null);

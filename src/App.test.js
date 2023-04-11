@@ -1,6 +1,6 @@
 import { render, screen, within, cleanup, fireEvent } from '@testing-library/react';
 import App from './App';
-import * as sentimentsApi from "./api/sentiments";
+import * as sentimentsApi from "./api/sentiments/sentiments";
 
 afterEach(cleanup);
 

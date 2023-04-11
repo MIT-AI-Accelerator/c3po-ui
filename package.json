@@ -25,7 +25,8 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "@svgr/webpack": "^7.0.0"
+    "@svgr/webpack": "^7.0.0",
+    "jest-fetch-mock": "^3.0.3"
   },
   "overrides": {
     "@svgr/webpack": "$@svgr/webpack"
@@ -63,7 +64,8 @@
       "!**/node_modules/**",
       "!**/builds/**",
       "!src/index.*",
-      "!src/reportWebVitals.*"
+      "!src/reportWebVitals.*",
+      "!src/setupJest.*"
     ],
     "coverageReporters": [
       "lcov",
