@@ -1,6 +1,6 @@
 import { render, screen, within, cleanup, fireEvent } from '@testing-library/react';
-import App from '../App';
-import * as sentimentsApi from "../api/sentiments";
+import App from './App';
+import * as sentimentsApi from "./api/sentiments";
 
 afterEach(cleanup);
 
@@ -37,6 +37,11 @@ describe('Interactions with main text input', () => {
         { status: 400 }
     });
   })
+
+  afterEach(() => {
+    const submitPromptMock = jest.spyOn(sentimentsApi, "submitPrompt");
+    submitPromptMock.mockReset();
+  });
 
   it('...calls the API when the prompt updates and returns the response when 200', async () => {
 
@@ -76,6 +81,24 @@ describe('Interactions with main text input', () => {
 
     // since the api is async (even if mocked), wait for the state to update using findBy (or could waitFor)
     expect(await findByText(/Error, try again later./i)).toBeTruthy();
+  });
+
+  it('...not to call API if not Enter', async () => {
+
+    // render app, save the react-testing-library utils
+    const { queryByLabelText, getByLabelText, findByText } = render(
+      <App />,
+    );
+
+    // ensure that the form input exists
+    expect(queryByLabelText(/C3PO Prompt/i)).toBeTruthy();
+
+    // "type" the key d
+    fireEvent.keyUp(getByLabelText(/C3PO Prompt/i), { key: 'd', code: 'KeyD', charCode: 68, target: { value: "anything" } });
+
+    // not called
+    expect(sentimentsApi.submitPrompt).not.toBeCalled();
+
   });
 
 });
