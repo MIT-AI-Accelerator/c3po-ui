@@ -4,25 +4,45 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.10.4",
-    "@emotion/styled": "^11.10.4",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
     "@fontsource/roboto": "^4.5.8",
-    "@mui/icons-material": "^5.10.9",
-    "@mui/material": "^5.10.9",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.12.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.0.34",
+    "@types/react-dom": "^18.0.11",
+    "plotly.js": "^2.20.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-plotly.js": "^2.6.0",
     "react-scripts": "5.0.1",
     "react-tsparticles": "^2.3.3",
+    "recharts": "^2.5.0",
     "tsparticles": "^2.3.4",
+    "typescript": "4.9.5",
     "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^7.0.0",
+    "@types/plotly.js": "^2.12.18",
+    "@types/react-plotly.js": "^2.6.0",
+    "jest-fetch-mock": "^3.0.3"
+  },
+  "overrides": {
+    "@svgr/webpack": "$@svgr/webpack"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --modulePaths=src",
+    "test:unit": "react-scripts test --watchAll=false --silent --coverage --bail --runInBand --detectOpenHandles --modulePaths=src",
+    "lint": "eslint . --ext js,jsx,ts,tsx --quiet",
+    "coverage": "CI=true react-scripts test --coverage --maxWorkers=2",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -42,5 +62,28 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{ts,tsx,js}",
+      "!**/node_modules/**",
+      "!**/builds/**",
+      "!src/index.*",
+      "!src/reportWebVitals.*",
+      "!src/setupJest.*"
+    ],
+    "coverageReporters": [
+      "lcov",
+      "html"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    },
+    "resetMocks": false
   }
 }

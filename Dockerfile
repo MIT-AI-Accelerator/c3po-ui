@@ -1,4 +1,4 @@
-FROM registry1.dso.mil/ironbank/opensource/nodejs/nodejs14:14.20.0 AS builder
+FROM registry1.dso.mil/ironbank/opensource/nodejs/nodejs18:18.15.0 AS builder
 USER root
 WORKDIR /app
 

@@ -39,32 +39,47 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+# Knowledge and helpful links
+## Tools for this repo
+- [How to use pre-commit framework for git hooks](https://pre-commit.com/index.html)
+- [migrating JS to TS](https://www.sitepoint.com/how-to-migrate-a-react-app-to-typescript/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Testing
+- [Good basic tutorial for react testing library](https://medium.com/@rickhanlonii/understanding-jest-mocks-f0046c68e53c)
+- [Basic Jest docs for React testing library](https://jestjs.io/docs/tutorial-react)
+- [Basic React testing library tutorial](https://www.taniarascia.com/how-to-test-useeffect-api-call/)
+- [Object returned by render](https://testing-library.com/docs/react-testing-library/api/#render-result)
+- [fireEvent docs and options](https://testing-library.com/docs/dom-testing-library/api-events/)
+- [what to do if "wrap in act" error asserts](https://davidwcai.medium.com/react-testing-library-and-the-not-wrapped-in-act-errors-491a5629193b)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Tools for git
+- [Storing Credentials](https://git-scm.com/docs/git-credential-store)...or just type `git config --global credential.helper store`
+- [GPG Commit Signing](https://confluence.il2.dso.mil/display/afrsba/Setting+up+GPG+for+GitLab+Commit+Signing)
 
-### Code Splitting
+# P1 Links
+## Basic Links
+- [P1 Code repo](https://code.il4.dso.mil/platform-one/products/ai-accel/transformers/c3po-model-server)
+- [P1 Pipelines](https://code.il4.dso.mil/platform-one/products/ai-accel/transformers/c3po-model-server/-/pipelines)
+- [Padawan Docs (landing pages)](https://padawan-docs.dso.mil/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## DevOps Links
+### SonarQube
+- [SonarQube for dependency check](https://sonarqube.il4.dso.mil/dashboard?id=platform-one-products-ai-accel-transformers-c3po-ui-dependencies)
+- [SonarQube for SCA & code coverage](https://sonarqube.il4.dso.mil/project/issues?id=platform-one-products-ai-accel-transformers-c3po-ui&resolved=false)
+- [False Positive Clearing SQ and trufflehog](https://confluence.il2.dso.mil/display/PUCKBOARD/Sonarqube+False-Positive+Issue+Workflow)
+- [Argo page](https://argocd-il4.admin.dso.mil/applications/argocd/p1-il4-mission-staging-transformers-transformers?view=tree&resource=)
 
-### Analyzing the Bundle Size
+### K8s configs
+- [IL4 mission bootstrap](https://code.il4.dso.mil/platform-one/devops/mission-bootstrap/il4-mission-bootstrap/-/tree/master/integrations/ai-accel/transformers)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Twistlock
+- [Twistlock link for repo](https://twistlock-il4.admin.dso.mil/api/v1/platform-one/products/ai-accel/transformers/c3po-ui
+- [Twistlock errors](https://confluence.il2.dso.mil/display/P1MDOHD/TS+-+Twistlock+-+Stage+Failure#TSTwistlockStageFailure-400:NoRegistrySettingsSpecificationApply)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Helpdesk Links
+- [Jira Service Desk](https://jira.il2.dso.mil/servicedesk/customer/portals)
+- [Add someone to Mattermost, Confluence, Jira](https://jira.il2.dso.mil/servicedesk/customer/portal/1/create/498?q=access&q_time=1673363010205)
+- [Add someone to DevOps](https://jira.il2.dso.mil/servicedesk/customer/portal/73/create/706?q=access&q_time=1673363566291)
+- [Request a pipeline](https://jira.il2.dso.mil/servicedesk/customer/portal/73/group/240)
+- [COT Ticket for AIA](https://jira.il2.dso.mil/browse/COT-484)
+- [False positive clearing](https://jira.il2.dso.mil/servicedesk/customer/portal/73/create/730)
