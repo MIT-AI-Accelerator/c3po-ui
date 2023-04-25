@@ -5,7 +5,7 @@
 export async function obtainBertopicVisualization(
     team = "nitmre"
 ) {
-    const apiResp = await fetch(`http://127.0.0.1:8000/v1/topics/insights/teamtrending/visualization/`, {
+    const apiResp = await fetch(`${process.env.REACT_APP_API_BASE_URL}/v1/topics/insights/teamtrending/visualization/`, {
         method: 'POST',
         headers: {
             'content-type': 'application/json',
@@ -16,7 +16,6 @@ export async function obtainBertopicVisualization(
     });
     
     const respJson = await apiResp.json();
-    console.log(respJson);
     return {
         status: apiResp.status,
         data: respJson,

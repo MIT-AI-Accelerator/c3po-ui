@@ -1,5 +1,5 @@
 import { cleanup } from '@testing-library/react';
-import { submitPrompt } from "./sentiments";
+import { submitPrompt } from "./topics";
 
 afterEach(cleanup);
 
