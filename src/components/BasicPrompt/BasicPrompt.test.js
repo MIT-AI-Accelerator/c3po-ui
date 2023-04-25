@@ -9,7 +9,7 @@ describe('App', () => {
     render(<BasicPrompt />);
   });
 
-  it('Contains an input with a C3PO Prompt label', () => {
+  it('Contains an input with a Stress Gauge label', () => {
     render(<BasicPrompt />);
     const labelElement = within(document.getElementsByTagName("fieldset")[0]).getByText(/C3PO/);
     const inputElement = screen.getByRole("textbox");
@@ -51,10 +51,10 @@ describe('Interactions with main text input', () => {
     );
 
     // ensure that the form input exists
-    expect(queryByLabelText(/C3PO Prompt/i)).toBeTruthy();
+    expect(queryByLabelText(/Stress Gauge/i)).toBeTruthy();
 
     // "type" the word "good" and hit enter
-    fireEvent.keyUp(getByLabelText(/C3PO Prompt/i), { key: 'Enter', code: 'Enter', charCode: 13, target: { value: "good" } });
+    fireEvent.keyUp(getByLabelText(/Stress Gauge/i), { key: 'Enter', code: 'Enter', charCode: 13, target: { value: "good" } });
 
     // ensure the correct api function was called with the correct word
     expect(sentimentsApi.submitPrompt).toHaveBeenCalledWith('good');
@@ -71,10 +71,10 @@ describe('Interactions with main text input', () => {
     );
 
     // ensure that the form input exists
-    expect(queryByLabelText(/C3PO Prompt/i)).toBeTruthy();
+    expect(queryByLabelText(/Stress Gauge/i)).toBeTruthy();
 
     // "type" the word "bad" and hit enter
-    fireEvent.keyUp(getByLabelText(/C3PO Prompt/i), { key: 'Enter', code: 'Enter', charCode: 13, target: { value: "bad" } });
+    fireEvent.keyUp(getByLabelText(/Stress Gauge/i), { key: 'Enter', code: 'Enter', charCode: 13, target: { value: "bad" } });
 
     // ensure the correct api function was called with the correct word
     expect(sentimentsApi.submitPrompt).toHaveBeenCalledWith('bad');
@@ -91,10 +91,10 @@ describe('Interactions with main text input', () => {
     );
 
     // ensure that the form input exists
-    expect(queryByLabelText(/C3PO Prompt/i)).toBeTruthy();
+    expect(queryByLabelText(/Stress Gauge/i)).toBeTruthy();
 
     // "type" the key d
-    fireEvent.keyUp(getByLabelText(/C3PO Prompt/i), { key: 'd', code: 'KeyD', charCode: 68, target: { value: "anything" } });
+    fireEvent.keyUp(getByLabelText(/Stress Gauge/i), { key: 'd', code: 'KeyD', charCode: 68, target: { value: "anything" } });
 
     // not called
     expect(sentimentsApi.submitPrompt).not.toBeCalled();
